@@ -1,0 +1,168 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    position: relative;
+    height: 550px;
+    width: 750px;
+    margin: 0 auto;
+    background-image: url(../img/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    /* cursor:  */
+}
+.mouse-box {
+    /* display: none; */
+    position: absolute;
+    height: 102px;
+    width: 102px;
+    overflow: hidden;
+    user-select: none;
+    /* background-color: aqua; */
+}
+.mouse-box img {
+    position: absolute;
+    left: 0;
+    top: 102px;
+    height: 102px;
+    width: 102px;
+    /* transition: top 0.5s linear; */
+}
+.mouse-box:nth-child(1) {
+    left: 142px;
+    top: 170px;
+}
+.mouse-box:nth-child(2) {
+    top: 170px;
+    left: 331px;
+}
+.mouse-box:nth-child(3) {
+    top: 173px;
+    left: 529px;
+}
+.mouse-box:nth-child(4) {
+    top: 258px;
+    left: 117px;
+}
+.mouse-box:nth-child(5) {
+    top: 260px;
+    left: 335px;
+}
+.mouse-box:nth-child(6) {
+    top: 258px;
+    left: 532px;
+}
+.mouse-box:nth-child(7) {
+    top: 351px;
+    left: 111px;
+}
+.mouse-box:nth-child(8) {
+    top: 356px;
+    left: 335px;
+}
+.mouse-box:nth-child(9) {
+    top: 356px;
+    left: 552px;
+}
+.show {
+    display: block;
+}
+.mouse-box .show1 {
+    animation: imgmove 0.5s linear forwards;
+}
+@keyframes imgmove {
+    100% {
+        top: 0;
+    }
+}
+
+.hammer {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/hammer1.png);
+    z-index: 99;
+    /* border: 1px solid red; */
+}
+.hammerdown {
+    background-image: url(../img/hammer2.png);
+}
+#mark {
+    position: absolute;
+    left: 230px;
+    top: 195px;
+    height: 22px;
+    width: 116px;
+    text-align: center;
+    user-select: none;
+    /* background: red; */
+}
+#time {
+    position: absolute;
+    left: 484px;
+    top: 195px;
+    height: 22px;
+    width: 116px;
+    text-align: center;
+    user-select: none;
+    /* background: red; */
+}
+#end {
+    position: absolute;
+    left: 175px;
+    top: 100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(12, 164, 190, 0.9);
+    z-index: 100;
+    overflow: hidden;
+}
+#end .endgame {
+    width: 200px;
+    height: 40px;
+    margin: 50px auto 0;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    /* background: yellow; */
+}
+#end .youmark { 
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 50px auto 0;
+    /* background: yellowgreen; */
+}
+#end .youmark div {
+    display: inline-block;
+    /* background: blue; */
+}
+#end .play {
+    height: 150px;
+    width: 150px;
+    margin: 50px auto 0;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 50%;
+    font-size: 50px;
+    user-select: none;
+    background: yellowgreen;
+    cursor: pointer;
+}
+#end.start .endgame {
+    opacity: 0;
+}
+#end.start .youmark {
+    opacity: 0;
+}
+#end.start .endgame {
+    display: 0;
+} 

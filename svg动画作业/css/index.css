@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background: #333;
+    font-size: 0;
+}
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+.item {
+    display: inline-block;
+}
+svg {
+    height: 40px;
+    width: 40px;
+    margin: 100px;
+}

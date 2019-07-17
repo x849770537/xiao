@@ -1,0 +1,137 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header {
+    width: 80%;
+    min-width: 1000px;
+    margin: 50px auto 0;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
+header ul li {
+    position: relative;
+    width: 200px;
+    margin: 0 10px;
+    border: 2px solid rgba(186, 7, 240,1);
+    border-radius: 20px;
+    background-color: #333;
+    overflow: hidden;
+}
+header ul li img {
+    width: 100%;
+	height: 100%;
+    border-radius: 20px;
+    transform: translateY(100%);
+    transition: transform 0.5s linear;
+}
+
+header .init  img {
+    transform: translateY(0);
+}
+header ul li:nth-child(1) img{
+    transition-delay: 0.1s;
+}
+header ul li:nth-child(2) img{
+    transition-delay: 0.2s;
+} 
+header ul li:nth-child(3) img{
+    transition-delay: 0.3s;
+} 
+header ul li:nth-child(4) img{
+    transition-delay: 0.4s;
+} 
+header ul li:nth-child(5) img{
+    transition-delay: 0.5s;
+} 
+header ul li .cover {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+header ul li .cover .des{
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+    transform: translate(0, 100%);
+    font-size: 12px;
+    color: #fff;
+    background: linear-gradient(to bottom , transparent  , #000)
+}
+header ul li .cover .top-int,
+header ul li .cover .top-out {
+    transform: translate(0, -100%);
+}
+header ul li .cover .right-int,
+header ul li .cover .right-out {
+    transform: translate(100%, 0);
+}
+header ul li .cover .bot-int,
+header ul li .cover .bot-out {
+    transform: translate(0, 100%);
+}
+header ul li .cover .left-int,
+header ul li .cover .left-out {
+    transform: translate(-100%, 0);
+}
+header ul li .cover .top-int,
+header ul li .cover .right-int,
+header ul li .cover .bot-int,
+header ul li .cover .left-int {
+    animation: moveint 0.3s linear forwards;
+}
+@keyframes moveint {
+    100% {
+        transform: translate(0, 0) ;
+    }
+}
+header ul li .cover .top-out {
+    animation: topout 0.3s linear;
+}
+@keyframes topout {
+    0% {
+        transform: translate(0, 0);
+    };
+    100% {
+        transform: translate(0, -100%);
+    };
+}
+header ul li .cover .right-out {
+    animation: rightout 0.3s linear;
+}
+@keyframes rightout {
+    0% {
+        transform: translate(0, 0);
+    };
+    100% {
+        transform: translate(100%, 0);
+    };
+}
+header ul li .cover .bot-out {
+    animation: botout 0.3s linear;
+}
+@keyframes botout {
+    0% {
+        transform: translate(0, 0);
+    };
+    100% {
+        transform: translate(0, 100%);
+    };
+}
+header ul li .cover .left-out {
+    animation: leftout 0.3s linear;
+}
+@keyframes leftout {
+    0% {
+        transform: translate(0, 0);
+    };
+    100% {
+        transform: translate(-100%, 0);
+    };
+}

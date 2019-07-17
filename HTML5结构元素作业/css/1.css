@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+header {
+	margin: 0 auto;
+    width: 1226px;
+    height: 80px;
+    background: #efefef;
+    /* border: 1px solid red; */
+}
+header h1 {
+	margin: 0;
+    padding: 0;
+    text-align:center;
+    /* color: #ffffff;  */
+}
+header p {
+	margin: 10px 0 0;
+    text-align: center;
+    /* color: #ffffff;  */
+}
+main {
+    position: relative;
+	margin: 0 auto;
+    width: 1226px;
+    height: 500px;
+    /* border: 1px solid red; */
+}
+main nav {
+	float: left;
+    width: 20%;
+    height: 500px;
+}
+main nav ul{
+	padding: 0;
+    margin: 0;
+    height: 500px;
+    background: #e0e0e0;
+}
+main nav ul li {
+    height: 20%;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+    cursor:pointer;
+	list-style: none;
+    background:linear-gradient(to bottom,greenyellow,#e0e0e0);
+    /* border: 1px solid greenyellow; */
+}
+main nav ul .main-nav {
+    background:linear-gradient(to bottom,#a28eec,rgb(245, 132, 230));
+}
+main .dope1 {
+    background: url(../img/1.jpg) no-repeat 50% 50%;
+    background-size:cover;
+}
+main .dope2 {
+    background: url(../img/2.jpg) no-repeat 50% 50%;
+    background-size:cover;
+} 
+main .dope3 {
+    background: url(../img/3.jpg) no-repeat 50% 50%;
+    background-size:cover;
+}
+main .dope4 {
+    background: url(../img/4.jpg) no-repeat 50% 50%;
+    background-size:cover;
+}
+main .dope5 {
+    background: url(../img/5.jpeg) no-repeat 50% 50%;
+    background-size:cover;
+}
+main section {
+    float: right;
+    height: 500px;
+    width: 80%;
+    /* background-size:cover; */
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    /* 清除浮动 */
+    clear: both;
+}
+main  article{
+    display: none;
+    text-indent: 2em;
+}
+main  .dope-sec {
+    display: block;
+    text-align: center;
+}
+footer {
+    margin: 0 auto;
+    width: 1226px;
+}
+footer section {
+	margin: 0 auto;
+    width: 1226px;
+    height: 80px;
+    /* border: 1px solid red; */
+    background-color: #a28eec;
+}
+footer section p {
+	margin: 0;
+    text-align: center;
+    line-height: 40px;
+}
+

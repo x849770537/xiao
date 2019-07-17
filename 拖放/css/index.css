@@ -1,0 +1,25 @@
+
+main {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+}
+main ul li {
+    display: block;
+    height: 30px;
+    width: 200px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    list-style: none;
+    background: #ccc;
+    border: 1px solid greenyellow;
+}
+.remove {
+    margin-left: 40px;
+    height: 200px;
+    width: 200px;
+    color: #fff;
+    background: #333;
+  
+}

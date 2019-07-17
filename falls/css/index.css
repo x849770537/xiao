@@ -1,0 +1,41 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    min-width: 1020px;
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.wrapper {
+    text-align: center;
+}
+.wrapper .list{
+    display: inline-block;
+}
+.wrapper .list li {
+    float: left;
+    
+}
+.item {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: rgba(65, 245, 176, 0.2)
+}
+.item img {
+    display: block;
+    width: 230px;
+}
+.item p{
+    width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* background-color: rgba(65, 245, 176, 0.2) */
+}

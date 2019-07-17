@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广告弹窗</title>
+    <style>
+        body {
+            height: 920px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .wrapper {
+            display: none;
+            height: 180px;
+            position: fixed;
+            right: 5px;
+            bottom: -189px;
+            border: 2px solid #000;
+            z-index: 10;
+        }
+        .wrapper img {
+            height: 180px;
+        }
+        .wrapper .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 13px;
+            width: 13px;
+            background-image: url(./close.jpg);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://www.qq.com/" frameborder="0"  width="100%" height="100%"></iframe>
+    <div class="wrapper">
+        <img src="./0.jpg" alt="">
+        <div class="close"></div>
+    </div>
+    <script>
+        var oWrapper = document.getElementsByClassName('wrapper')[0];
+        var oClose = document.getElementsByClassName('close')[0];
+        var h = 5;
+        var index = 4;
+        var newheight = -189;
+        console.log(oWrapper.style.bottom);
+        window.onload = function () {
+            console.log(111)
+            upShow();
+        };
+        function upShow () {
+            if ( newheight < h ) {
+                oWrapper.style.display = "block";
+                oWrapper.style.bottom = newheight + 'px';
+                newheight += index;
+                setTimeout(upShow, 20);
+            } else {
+                newheight = -189;
+                oWrapper.style.bottom = '5px';
+            }   
+        }
+        oClose.onclick = function() {
+            console.log(newheight);
+            downShow();
+        }
+        function downShow() {
+            if ( newheight < h ) {
+                oWrapper.style.bottom = h + 'px';
+                h -= index;
+                setTimeout(downShow, 20);
+            } else {
+                h = 5;
+                oWrapper.style.bottom = '-189px';
+                oWrapper.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+.box{
+    margin: 10px;
+    height: 30px;
+    display: flex;
+}
+.reduce {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+input {
+    width: 50px;
+    height: 28px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.sum{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.box .min{
+    color: #e5e5e5;
+}

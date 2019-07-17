@@ -1,0 +1,74 @@
+body, li, ul, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    width:100%;
+    height:100%;
+}
+body {
+    width:100%;
+    height:100%;
+    background: url(../img/68y58PICCT4_1024.jpg) no-repeat;
+    background-size: cover;
+    border: 1px solid #000; 
+}
+.wrapper {
+    width: 600px;
+    margin: 100px auto 0;
+    background: rgba(274,274,274, 1);
+    /* border: 1px solid #000; */
+}
+input {
+    display: none;
+}
+.title ul {
+    height: 50px;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+}
+.title li {
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    font-size: 20px;
+    background: rgba(204,204,204,1);
+}
+.title li label {
+    display: block;
+    height: 50px;
+    width: 200px;
+}
+.main {
+    width: 600px;
+}
+.main ul {
+    display: none;
+    padding: 20px 0;
+}
+.main ul li {
+    width: 500px;
+    margin: 10Px 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main ul li a {
+    font-size: 14px;
+    color: rgba(102,102,102,1);
+}
+#hot:checked ~ .main .hot-box,
+#home:checked ~ .main .home-box,
+#international:checked ~ .main .international-box {
+    display: block;
+    
+}
+#hot:checked ~ .title .hot,
+#home:checked ~ .title .home,
+#international:checked ~ .title .international {
+    background: rgba(274,274,274, 1);
+}

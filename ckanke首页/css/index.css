@@ -1,0 +1,757 @@
+body, ul, li, a, p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    min-width: 1920px;
+}
+header {
+    height: 100px;
+    background: #212121;
+}
+header .wrapper {
+    height: 100%;
+    width: 680px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+header .wrapper ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+header .wrapper ul li {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    flex-grow: 1;
+}
+header .wrapper ul li:nth-child(3) {
+    display: block;
+    height: 35px;
+    width: 35px;
+    margin: auto;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+header .wrapper a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    flex-grow: 1;
+}
+header .wrapper a::before {
+    content: ' ';
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    margin-left: -15px;
+    height: 1px;
+    width: 30px;
+    background-color: #fff;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+header .wrapper a:hover::before {
+    transform: scale(1);
+}
+.center{
+    background: #f2f2f2;
+}
+.center-image {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/center-image1.png);
+    background-position: center;
+    background-size: cover;
+}
+.form-box {
+    width: 100%;
+    height: 180px;
+    padding: 0 21%;
+    font-size: 0;
+    box-sizing: border-box;
+}
+main .center .form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-box .form div {
+    margin: 0;
+    width: 250px;
+    font-size: 26px;
+    font-weight: 200; 
+}
+main .center .form .form-text {
+    height: 50px;
+    width: 250px;;
+    outline: none;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    background: #f2f2f2;
+    border-bottom: 2px solid #acacac;
+}
+.form-but {
+    width: 209px;
+    height: 64px; 
+    color: #fff;
+    font-size: 22px;
+    outline: none;
+    border: 0;
+    border-radius: 32px;
+    background-color: #212121;
+}
+.team {
+    height: 867px;
+    background: #212121;
+    overflow: hidden;
+}
+.team .team-list {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 45px;
+    margin: 200px auto 0;
+    font-size: 14px;
+    color: #fff;
+    border-left: 2px solid #fff;
+}
+.team .team-list .list-left {
+    margin-left: 10px;
+
+}
+
+.team .team-list .list-left .leftup {
+    font-size: 20px;
+}
+.team-cent {
+    height: 622px;
+    font-size: 0;
+    text-align: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.team-cent .cent-left,
+.team-cent .cent-right{
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 354px;
+}
+.team-cent .cent-left div,
+.team-cent .cent-right div {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    margin-top: -10px;
+    padding: 0 10px;
+    height: 20px;
+    width: 10px;
+    background: rgba(0, 0, 0, 1);
+    background-image: url(../img/RightArrow.png);
+    background-clip: content-box;
+    background-position-x: -1px;
+}
+.team-cent .cent-left div:hover,
+.team-cent .cent-right div:hover {
+    cursor: pointer;
+}
+@keyframes centright {
+    100%{
+        transform: translateX(10px);
+    }
+}
+@keyframes centleft {
+    100%{
+        transform: translateX(-10px);
+    }
+}
+.team-cent .cent-left div {
+    left: 10px;
+    background-position-x: 0;
+    background-image: url(../img/left.png);
+}
+.left-box {
+    animation: centleft 0.5s linear alternate infinite;
+}
+.right-box {
+    animation: centright 0.5s linear alternate infinite;
+}
+.team-cent .cent-box {
+    display: inline-block;
+    position: relative;
+    height: 428px;
+    width: 1178px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.team-cent .cent-box ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+    white-space:nowrap;
+    height: 428px;
+}
+.team-cent .cent-box ul li {
+    display: inline-block;
+    position: relative;
+    width: 282px;
+    height: 428px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+.team-cent .cent-box ul li .cent {
+    width: 282px;
+    height: 354px; 
+}
+.team-cent .cent-box ul li .cent .cent-list {
+    width: 222px;
+    height: 254px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    white-space: normal;
+    padding: 80px 30px 20px;
+    background-color: rgba(35,34,34,0.5);
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.team-cent .cent-box ul li .cent:hover .cent-list {
+    opacity: 1;
+}
+.cent .cent-list p {
+    padding: 10px;
+    font-size: 20px;
+}
+.team-cent  .cent-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    font-size: 30px;
+}
+main .model {
+    height: 950px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.model-up {
+    height: 670px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 178px;
+    box-sizing: border-box;
+}
+
+.model-up .model-up-left {
+    float: left;
+    width: 315px;
+    padding-left: 7px;
+    border-left: 2px solid #acacac;
+}
+.model-up .model-up-left div {
+    display: inline-block;
+    font-size: 30px;
+}
+main span {
+    color: #c7c7c7;    
+}
+.model-up .model-up-left .model-left2 {
+    font-size: 14px;
+}
+.model-up .model-up-right {
+    position: relative;
+    float: right;
+    width: 715px;
+    height: 330px;
+}
+.model-right {
+    position: absolute;
+    width: 300px;
+    height: 130px;
+}
+.model-right:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+.model-right:nth-child(2) {
+    right: 0;
+    top: 0;
+}
+.model-right:nth-child(3) {
+    left: 0;
+    bottom: 0;
+}
+.model-right:nth-child(4) {
+    right: 0;
+    bottom: 0;
+}
+.model-right .right-ico {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.model-right:nth-child(1) .right-ico {
+    background-image: url(../img/Settings.png);
+}
+.model-right:nth-child(2) .right-ico {
+    background-image: url(../img/Bar\ Graph.png);
+}
+.model-right:nth-child(3) .right-ico {
+    background-image: url(../img/Book.png);
+}
+.model-right:nth-child(4) .right-ico {
+    background-image: url(../img/users.png);
+}
+.model-right .right-up {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.model-right .right-down {
+    font-size: 14px;
+}
+.model-down {
+    height: 280px;
+    background: rgba(243, 243, 243, 1);
+}
+.model-down .job-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 280px;
+    margin: 0 auto;
+}
+.model-down .job {
+    display: inline-block;
+    width: 325px;
+    height: 70px;
+}
+
+.job .job-ico {
+    display: inline-block;
+    width: 56px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.job-box .job:nth-child(1) .job-ico  {
+    background-image: url(../img/学士帽.png);
+}
+.job-box .job:nth-child(2) .job-ico {
+    background-image: url(../img/computer.png);
+}
+.job-box .job:nth-child(3) .job-ico {
+    background-image: url(../img/like.png);
+}
+.job .job-cent {
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    margin-left: 25px;
+    padding-left: 30px;
+    font-size: 14px;
+    border-left: 1px solid rgb(102, 102, 102);
+    vertical-align: top;
+}
+.job .job-cent p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+main .front {
+    height: 1100px;
+    color: #fff;
+    overflow: hidden;
+    background-image: url(../img/jesse-gardner-40008.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #262626;
+}
+.front .front-list {
+    position: relative;
+    width: 1200px;
+    height: 70px;
+    margin: 134px auto 0;
+}
+.front .front-list .front-list-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    padding-left: 10px;
+    font-size: 30px;
+    border-left: 2px solid #fff;
+}
+.front .front-list .front-list-left div {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.front-list .front-list-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
+.front-wrap {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 80px auto 160px;
+}
+.front-wrap .front-item {
+    position: relative;
+    height: 220px;
+    width: 398px;
+    padding: 40px;
+    margin: 1px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #000;
+    box-sizing: border-box;
+}
+.front-wrap .front-item .item-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.item-square {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+main .project {
+    position: relative;
+    height: 1038px;
+    padding: 240px 0 0 358px;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+}
+.project .pro-list {
+    height: 66px;
+    padding-left: 10px;
+    border-left: 2px solid #000;
+    font-size: 30px;  
+}
+.project .pro-list div {
+    padding-top: 5px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: rgb(20, 20, 20);
+}
+.project .pro-main {
+    height: 90px;
+    width: 790px;
+    padding: 55px 0 0 10px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.project .pro-fun {
+    padding: 60px 0 0 10px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.project .pro-last {
+    padding: 60px 0 0 10px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.pro-last .pro-last-box {
+    position: relative;
+    width: 810px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.pro-box-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro-box-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 515px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro-box-s {
+    display: inline-block;
+    height: 50px;
+    width: 220px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px dashed #999;
+    border-radius: 20px;
+}
+.pro-box-img {
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/Arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project .poj-img {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    height: 730px;
+    width: 720px;
+    background-image: url(../img/552.png);
+    background-repeat: no-repeat;
+    background-position: -160px -2566px;
+}
+.project .poj-img div {
+    position: absolute;
+    top: 45px;
+    left: 148px;
+    height: 602px;
+    width: 572px;
+    background-image: url(../img/小米商城\ -\ 小米8、小米MIX\ 2S、红米6\ Pro、小米电视官方网站.png);
+}
+main .feature {
+    height: 720px;
+    overflow: hidden;
+    font-size: 14px;
+    background: #f3f3f3;
+}
+.feature-wrap {
+    width: 1206px;
+    height: 370px;
+    margin: 160px auto; 
+}
+.feature-wrap .feature-box {
+    display: inline-block;
+    position: relative;
+    width: 230px;
+    height: 180px;
+    margin: 0 25px 20px;
+    vertical-align: top;
+}
+.feature-box:nth-child(1) {
+    height: 67px;
+    padding-left: 10px;
+    font-size: 30px;
+    border-left: 1px solid #000;
+}
+.feature-box:nth-child(1) div {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.feature-box p {
+    padding-bottom: 20px;
+}
+.feature-box .feature-ico {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.feature-box:nth-child(2) .feature-ico {
+    background-image: url(../img/Computer1.png);
+}
+.feature-box:nth-child(3) .feature-ico {
+    background-image: url(../img/TypingMessage.png);
+}
+.feature-box:nth-child(4) .feature-ico {
+    background-image: url(../img/Users.png);
+}
+.feature-box:nth-child(5) .feature-ico {
+    background-image: url(../img/Clock.png);
+}
+.feature-box:nth-child(6) .feature-ico {
+    background-image: url(../img/Profile.png);
+}
+.feature-box:nth-child(7) .feature-ico {
+    background-image: url(../img/Medal.png);
+}
+.feature-box:nth-child(8) .feature-ico {
+    background-image: url(../img/矩形\ 28.png);
+}
+main .ipad-box {
+    height: 856px;
+    position: relative;
+    overflow: hidden;
+}
+.ipad-box .ipad {
+    position: relative;
+    width: 930px;
+    height: 750px;
+    margin: 120px auto 0;
+    overflow: hidden;
+    background-image: url(../img/ipad.png);
+}
+.chat {
+    width: 815px;
+    height:630px;
+    position: absolute;
+    left: 56px;
+    top: 116px;
+    background-image: url(../img/chat.png);
+    background-size: contain;
+}
+.ipad-box .ipad-radio{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 845px;
+    left: 1460px;
+    background: #000;
+}
+.ipad-box .ipad-radio:nth-child(2) {
+    left: 1480px;
+    background: #c7c7c7;
+}
+
+.contact {
+    height: 690px;
+    background: #212121;
+    color: #fff;
+    overflow: hidden;
+} 
+.contact .contact-list {
+    position: relative;
+    width: 1200px;
+    height: 70px;
+    margin: 134px auto 0;
+}
+.contact .contact-list .contact-list-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    padding-left: 10px;
+    font-size: 30px;
+    border-left: 2px solid #fff;
+}
+.contact .contact-list .contact-list-left div {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.contact-list .contact-list-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
+.contact-wrap {
+    width: 1200px;
+    margin: 118px auto;
+}
+.contact-wrap .contact-box{
+    display: inline-block;
+    width: 190px;
+    margin-right: 20px;
+    text-align: center;
+}
+.contact-wrap .contact-box .contact-box-img {
+    width: 190px;
+    height: 190px;
+    background-image: url(../img/微信图片_20180809231006\ 拷贝.png);
+}
+.contact-us {
+    display: inline-block;
+    width: 180px;
+    margin-left: 150px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.contact-us-box {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.contact-us-box li {
+    margin: 15px 0;
+}
+.contact-job {
+    display: inline-block;
+    width: 200px;
+    height: 220px;
+    margin-left: 190px;
+    vertical-align: top;
+}
+.contact-job-box {
+    width: 250px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+.contact-job-box .contact-job-ico {
+    display: inline-block;
+    width: 30px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+.contact-job-box:nth-child(1) .contact-job-ico{
+    background-image: url(../img/16素材16sucai.com.png)
+}
+.contact-job-box:nth-child(2) .contact-job-ico{
+    background-image: url(../img/mail.png);
+}
+.contact-job-box .contact-job-cent {
+    display: inline-block;
+    width: 120px;
+    height: 70px;
+    margin-left: 25px;
+    padding-left: 30px;
+    font-size: 14px;
+    border-left: 1px solid rgb(255, 255, 255);
+    vertical-align: top;
+}
+.contact-job-box .contact-job-cent p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+footer {
+    height: 105px;
+    line-height: 105px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}

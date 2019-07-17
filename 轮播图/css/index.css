@@ -1,0 +1,93 @@
+body, ul , li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    margin: 100px auto 0;
+    border: 5px solid #000;
+    overflow: hidden;
+}
+.box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6000px;
+    font-size: 0;
+    /* overflow: hidden; */
+}
+.box li {
+    /* position: absolute; */
+    height: 500px;
+    width: 1000px;
+    display: inline-block;
+}
+.box li img {
+    height: 500px;
+    width: 1000px;
+}
+.left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ddd;
+    font-size: 25px;
+    border-radius: 0 50% 50% 0; 
+    background-color: rgba(233, 233, 233, 0.2);
+    cursor: pointer;
+    user-select: none;
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ddd;
+    font-size: 25px;
+    border-radius: 50%  0 0 50%;
+    background:  rgba(233, 233, 233, 0.2);
+    cursor: pointer;
+    user-select: none;
+}
+.radio-box {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -50px;
+    height: 20px;
+    width: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(204, 204, 204, 0.7);
+}
+.radio-box ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.radio-box ul li {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.radio-box ul .show {
+    background-color: #ff6700;
+}

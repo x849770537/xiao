@@ -1,0 +1,285 @@
+body, ul, p, li{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background:url(../img/0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.min-box {
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    height: 100%;
+}
+.min-box .covers {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -120px;
+    height: 240px;
+    width: 240px;
+}
+.min-box .covers img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    transform: animateTo 360;
+    border: 20px solid #333;
+    border-radius: 50%;
+}
+.songsname {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+.conts-box {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    height: 50px;
+    background: rgba(255, 64, 64, 0.5);
+    border-radius:10px;
+}
+.conts-box .play-box {
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+}
+.conts-box .play-box {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+}
+.conts-box i {
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.conts-box .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 50px;
+}
+.conts-box .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 50px;
+}
+.conts-box .progress-box{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -180px;
+    height: 50px;
+    width: 430px;
+}
+
+.conts-box .progress-box .playtime {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 10px;
+   /* 设置字体粗细； */
+    font-weight: 100;
+    text-align: center;
+}
+.conts-box .progress-box .progress {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -164px;
+    margin-top: -5px;
+    height: 10px;
+    width: 328px;
+    line-height: 10px;
+}
+.conts-box .progress-box .alltime {
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    right: 5px;
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+.progress-box .progress .progress-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0,0,0,0.4);
+}
+.progress-box .progress .progress-active {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    width: 0px;
+    height: 2px;
+    background-color: rgba(255,255,255,0.4);
+}
+.radio-box {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    margin-right: -14px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.radio {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -4px;
+    margin-right: -4px;
+    width: 8px;
+    height: 8px;
+    background-color:rgba(255,255,255,1);
+    border-radius: 50%;
+}
+.conts-box .sound {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+.conts-box .sound i {
+    display: block;
+    width: 40px;
+    font-size: 30px;
+}
+.sound .sound-box {
+    display: none;
+    position: absolute;
+    left: -20px;
+    bottom: 50px;
+    width: 80px;
+    height: 198px;
+}
+.sound .sound-active {
+    position: absolute;
+    left: 20px;;
+    bottom: 0;
+    width: 40px;
+    height: 178px;
+    border-radius: 10px;
+    background:rgba(255, 255, 200, 0.3);
+}
+.sound-active .volume-off {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 39px;
+    width: 40px;
+    line-height: 40px;
+    border-top: 1px solid rgba(0, 255, 100, 0.3);
+}
+.sound-active .volume-off i {
+    line-height: 39px;
+    font-size: 20px;
+}
+.sound .voice-box {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 118px;
+    width: 100%;
+    border-radius: 10px;
+}
+.sound .voice-box .voice-bg {
+    position: absolute;
+    bottom:5px;
+    left: 50%;
+    margin-left: -1PX;
+    height: 108px;
+    width: 2px;
+    background: #333;
+}
+.sound .voice-box .volume-box {
+    position: absolute;
+    bottom:5px;
+    left: 50%;
+    margin-left: -1PX;
+    height: 50px;
+    width: 2px;
+    background: #fff;
+}
+.sound .voice-box .volume-box .volume {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -11.5px;
+    margin-left: -7.5px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.volume-box .volume-radio{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -4px;
+    margin-right: -4px;
+    width: 8px;
+    height: 8px;
+    background-color:rgba(255,255,255,1);
+    border-radius: 50%;
+}
+.sound .voice-box .volumenum {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width:100%;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    color: #fff
+}

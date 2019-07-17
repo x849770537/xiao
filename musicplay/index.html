@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+</head>
+<body>
+   <main class="min-box">
+       <div class="covers">
+           <img src="./img/海阔天空.jpg" alt="" id="Img" >
+           <audio id="Audio" src="./song/海阔天空.flac" ></audio>
+       </div>
+       <div class="songsname">海阔天空</div>
+       <div class="conts-box">
+           <div class="play-box">
+                <div  class="left"><i class="iconfont icon-verticalright lastsong" ></i></div>
+                <div><i class="iconfont icon-play-circle" id="play-but"></i></div>
+                <div class="right"><i class="iconfont icon-verticalleft nextsong" ></i></div>
+            </div>
+           <div class="progress-box">
+               <div class="playtime" id="playTime"></div>
+               <div class="progress">
+                   <div class="progress-bg"></div>
+                   <div class="progress-active">
+                        <div class="radio-box">
+                            <span class="radio"></span>
+                        </div>
+                   </div>    
+               </div>
+               <div class="alltime" id="allTime"></div>
+           </div>
+           <div class="sound">
+               <i  class="iconfont icon-shengyin soundbnt"></i>
+               <div class="sound-box">
+                   <div class="sound-active" id="soundactive">
+                        <div class="volume-off">
+                            <i id="volume-offbnt" class="iconfont icon-shengyin"></i>
+                        </div>
+                        <div class="voice-box">
+                            <div class="voice-bg"></div>
+                            <div class="volume-box">
+                                <div class="volume">
+                                    <span class="volume-radio"></span>
+                                </div>
+                           </div>  
+                           <div class="volumenum">50%</div>
+                        </div>  
+                   </div> 
+               </div>
+            </div>
+       </div>
+   </main>
+   <script src="./js/index.js"></script>
+</body>
+</html>

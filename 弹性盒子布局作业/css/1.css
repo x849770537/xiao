@@ -1,0 +1,118 @@
+body, ul, li, h1, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    height: 100%;
+    width: 100%;
+    min-width: 900px;
+    background: #ccc;
+}
+header {
+    text-align: center;
+    background: #bbb;
+}
+.clearfix {
+    display: flex;
+    height: 500px;
+}
+.clearfix input {
+    display: none;
+}
+.clearfix .var{
+    height: 500px;
+    width: 20%;
+    flex-shrink: 0;
+}
+.clearfix ul{
+    display: flex;
+    width:100%;
+    height: 500px;
+    flex-direction: column; 
+    background: #a7cc42;
+}
+.clearfix ul li {
+    flex-grow: 1;
+}
+.clearfix ul li label {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to bottom,greenyellow,#e0e0e0);
+}
+.clearfix .dope1 {
+    flex-grow: 1;
+    column-count: 1;
+    height: 100%;
+}
+.clearfix .dope1 article {
+    display: none;
+}
+.clearfix .dope1 h1 {
+    margin: 18px 0;
+    text-align: center;
+}
+.clearfix .dope1 p {
+    margin: 0 10px;
+    text-indent: 2em;
+}
+.clearfix .dope1 article {
+    height: 100%;
+    width: 100%;
+}
+.clearfix .right {
+    width: 20%;
+    flex-shrink: 0;
+    background: rgba(11, 238, 219, 0.5);
+}
+footer {
+    background: rgb(11, 174, 238,0.5);
+}
+footer section {
+    text-align: center;
+}
+#dope1:checked ~ .dope1 :nth-child(1) {
+    display: block;
+}
+#dope2:checked ~ .dope1 :nth-child(2) {
+    display: block;
+}
+#dope3:checked ~ .dope1 :nth-child(3) {
+    display: block;
+}
+#dope4:checked ~ .dope1 :nth-child(4) {
+    display: block;
+}
+#dope5:checked ~ .dope1 :nth-child(5) {
+    display: block;
+}
+#dope1:checked ~ .var ul :nth-child(1) label,
+#dope2:checked ~ .var ul :nth-child(2) label,
+#dope3:checked ~ .var ul :nth-child(3) label,
+#dope4:checked ~ .var ul :nth-child(4) label,
+#dope5:checked ~ .var ul :nth-child(5) label {
+    background:linear-gradient(to bottom,#a28eec,rgb(245, 132, 230));
+}
+#dope1:checked ~ .dope1  {
+    background: url(../img/1.jpg) no-repeat;
+    background-size:cover;
+}
+#dope2:checked ~ .dope1  {
+    background: url(../img/2.jpg) no-repeat;
+    background-size:cover;
+}
+#dope3:checked ~ .dope1  {
+    background: url(../img/3.jpg) no-repeat;
+    background-size:cover;
+}
+#dope4:checked ~ .dope1  {
+    background: url(../img/4.jpg) no-repeat;
+    background-size:cover;
+}
+#dope5:checked ~ .dope1  {
+    background: url(../img/5.jpeg) no-repeat;
+    background-size:cover;
+}

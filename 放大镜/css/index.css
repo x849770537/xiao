@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+.min {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.move {
+    display: block;
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: url(../img/3.png);
+    z-index: -1;
+}
+.max {
+    display: none;
+    /* display: inline-block; */
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.max img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -50px;
+}

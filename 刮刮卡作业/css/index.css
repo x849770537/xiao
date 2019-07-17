@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.canvas {
+    height:400px;
+    width: 400px;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

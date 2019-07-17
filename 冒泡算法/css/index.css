@@ -1,0 +1,17 @@
+div {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    border: 1px solid black;
+    transition: left 0.5s linear;
+}
+/* .right {
+    background-color: yellow;
+}
+.left {
+    background-color: yellowgreen;
+} */
+/* body {
+    color: yellowgreen
+} */

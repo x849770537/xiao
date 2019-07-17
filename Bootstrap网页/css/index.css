@@ -1,0 +1,123 @@
+body {
+    padding-top: 30px;
+    font-size: 14px;
+}
+.masthead {
+    position: relative;
+    margin: 0;
+    padding: 60px 0 80px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(45deg,#020031 0,#6d3353 100%);
+}
+.masthead:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/bs-docs-masthead-pattern.png) repeat center center;
+    opacity: .5;
+}
+.masthead h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.masthead h2 {
+    font-size: 18px;
+    font-weight: 200;
+}
+.masthead p {
+    position: relative;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 200;
+    z-index: 10;
+}
+.masthead ul {
+    padding: 0;
+}
+.masthead ul li {
+    position: relative;
+    list-style: none;
+    z-index: 10;
+}
+.bc-social {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+}
+.masthead ul li a {
+    color: rgba(255, 255, 255 , .5)
+}
+.bc-social-buttons {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    list-style: none;
+}
+.bc-social-buttons li {
+    margin: 0 5px;
+}
+.bc-social-buttons :nth-child(2) {
+    font-size: 17px;
+    color: #ccc;
+}
+.container {
+    text-align: center;
+}
+.thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 310px;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+.thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+.footer {
+    padding: 30px 0;
+}
+.footer ul {
+    padding: 0;
+}
+.footer ul li {
+    list-style: none;
+    text-align: center;
+}
+.footer .bc-social-buttons a {
+    color: #777;
+}
+.footer h4 {
+    font-size: 16px;
+    color: #563d7c;
+}
+@media screen and (min-width: 768px) {
+    .navbar.navbar-inverse.navbar-fixed-top a{
+        height: 40px!important;
+        padding-top: 10px;
+    }
+    .masthead {
+        padding: 90px 0 110px;
+    }
+    .masthead h1 {
+        font-size: 90px;
+    }
+    .masthead h2 {
+        font-size: 24px;
+    }
+    .navbar {
+        min-height: 40px;
+    }
+}

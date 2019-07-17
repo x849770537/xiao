@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    position: relative;
+}
+.left {
+    width: 140px;
+}
+.left img {
+    width: 140px;
+}
+.image {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.right {
+    width: 440px;
+    margin-left: 20px;
+}
+.right img {
+    display: none;
+    width: 440px;
+}
+.right .show {
+    display: block;
+} 

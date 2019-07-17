@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    min-width: 1000px;
+}
+.drag {
+    width: 300px;
+    height: 300px;
+    /* margin: 0 auto; */
+    color: blueviolet;
+    font-size: 20px;
+    line-height: 300px;
+    text-align: center;
+    background-color: yellowgreen;
+}
+.tool {
+    position: relative;
+    height: 40px;
+    width: 300px;
+    /* margin: 10px auto 0; */
+    /* background: rgba(25,25,25,.3); */
+}
+.progress {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 20px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.val {
+    height: 20px;
+    width: 0px;
+    background: #ccc;
+}
+.text {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    height: 20px;
+    width: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
