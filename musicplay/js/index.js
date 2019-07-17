@@ -19,7 +19,7 @@ var oplayTime = document.getElementById("playTime"),
     volumeOoffBnt = document.getElementById("volume-offbnt");
 var timer,times,nowvolume,imgRun;
 var songsnumber = 0,imgnumber = 0;
-var Songs =["海阔天空.flac","空空如也.flac","光辉岁月.flac","蓝皮鼠和大脸猫.mp3"];
+var Songs =["海阔天空.flac","空空如也1.flac","光辉岁月.flac","蓝皮鼠和大脸猫.mp3"];
 var SongsName = [];
 for(var i = 0; i < Songs.length; i++ ){
     if(Songs[i].indexOf(".flac") > -1){
